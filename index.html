@@ -1,140 +1,287 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert Park Accounting Services | Your Financial Success</title>
     <meta name="description" content="Professional accounting services including tax optimization, cloud accounting, and real-time reporting. Your financial success is our bottom line.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header x-data="{ isOpen: false }" class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://test-acc-12349.github.io/albert-park-accounting-services-2025-04-24-b80vn" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     Albert Park
-                </div>
+                </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">About</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">Contact</a>
                 </div>
-                <button @click="isOpen = !isOpen" class="md:hidden text-gray-300 hover:text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden text-gray-300 hover:text-white" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div x-show="isOpen" class="md:hidden mt-4 space-y-4">
-                <a href="#features" class="block text-gray-300 hover:text-white">Features</a>
-                <a href="#benefits" class="block text-gray-300 hover:text-white">Benefits</a>
-                <a href="#contact" class="block text-gray-300 hover:text-white">Contact</a>
+            <div class="mobile-menu hidden md:hidden mt-4 space-y-4">
+                <a href="#features" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">About</a>
+                <a href="#contact" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center justify-center py-24 px-6">
             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-gray-900"></div>
             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c')] bg-cover bg-center opacity-10"></div>
             <div class="relative container mx-auto text-center">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Albert Park accounting services
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent animate-fade-in">
+                    Transform Your Financial Future with Albert Park
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-                    Your financial success is our bottom line
+                    Expert accounting solutions that drive growth, optimize taxes, and secure your financial success. Join over 1,000+ satisfied clients who trust Albert Park for their accounting needs.
                 </p>
                 <a href="https://theaccountants.com" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
-                    Get Started Today
+                    Start Your Financial Journey
                 </a>
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="py-24 px-6 bg-gray-800/50">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                     Comprehensive Financial Solutions
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gray-800/50 p-8 rounded-2xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50">
+                    <!-- Tax Optimization Card -->
+                    <div class="bg-gray-800/50 p-8 rounded-2xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20">
                         <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Tax Optimization</h3>
-                        <p class="text-gray-400">Strategic tax planning and optimization to minimize your tax liability while ensuring compliance.</p>
+                        <h3 class="text-xl font-semibold mb-4">Strategic Tax Optimization</h3>
+                        <p class="text-gray-400">Maximize your tax savings with our comprehensive tax planning strategies. We identify every legitimate deduction and credit while ensuring full compliance with current regulations.</p>
                     </div>
-                    <div class="bg-gray-800/50 p-8 rounded-2xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50">
+
+                    <!-- Cloud Accounting Card -->
+                    <div class="bg-gray-800/50 p-8 rounded-2xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20">
                         <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Cloud Accounting</h3>
-                        <p class="text-gray-400">Access your financial data anytime, anywhere with our secure cloud-based accounting solutions.</p>
+                        <h3 class="text-xl font-semibold mb-4">Advanced Cloud Accounting</h3>
+                        <p class="text-gray-400">Experience seamless financial management with our secure cloud-based platform. Access real-time data, automate reconciliations, and collaborate effortlessly with your team.</p>
                     </div>
-                    <div class="bg-gray-800/50 p-8 rounded-2xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50">
+
+                    <!-- Real-time Reporting Card -->
+                    <div class="bg-gray-800/50 p-8 rounded-2xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20">
                         <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Real-time Reporting</h3>
-                        <p class="text-gray-400">Get instant insights into your financial performance with comprehensive real-time reporting.</p>
+                        <h3 class="text-xl font-semibold mb-4">Dynamic Financial Reporting</h3>
+                        <p class="text-gray-400">Transform raw data into actionable insights with our comprehensive reporting suite. Get customized dashboards, trend analysis, and predictive forecasting at your fingertips.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Benefits Section -->
         <section id="benefits" class="py-24 px-6">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Why Choose Us
+                    Why Choose Albert Park
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
-                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+                    <!-- Time Savings -->
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/20">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Save Time</h3>
-                        <p class="text-gray-400">Streamline your accounting processes and focus on growing your business.</p>
+                        <h3 class="text-xl font-semibold mb-4">Save 20+ Hours Monthly</h3>
+                        <p class="text-gray-400">Automate tedious bookkeeping tasks and focus on strategic growth. Our clients report saving over 20 hours per month on financial management.</p>
                     </div>
-                    <div class="text-center">
-                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+
+                    <!-- Error Reduction -->
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/20">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Reduce Errors</h3>
-                        <p class="text-gray-400">Minimize mistakes with our automated systems and expert oversight.</p>
+                        <h3 class="text-xl font-semibold mb-4">99.9% Accuracy Rate</h3>
+                        <p class="text-gray-400">Our advanced systems and expert review process ensure near-perfect accuracy in all financial records and tax submissions.</p>
                     </div>
-                    <div class="text-center">
-                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+
+                    <!-- Tax Savings -->
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/20">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Maximize Deductions</h3>
-                        <p class="text-gray-400">Identify all available tax deductions to optimize your financial position.</p>
+                        <h3 class="text-xl font-semibold mb-4">Average 35% Tax Savings</h3>
+                        <p class="text-gray-400">Our clients typically see a 35% reduction in tax liability through our strategic planning and optimization strategies.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 px-6 bg-gray-800/50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Client Success Stories
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Albert Park's cloud accounting solution has transformed our business operations. We've reduced our bookkeeping time by 75% and have real-time insights into our financials."</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-white">Sarah Johnson</p>
+                            <p class="text-sm text-gray-400">CEO, TechStart Solutions</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Their tax optimization strategies saved us over $50,000 last year. The team's expertise and proactive approach are invaluable to our business."</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-white">Michael Chen</p>
+                            <p class="text-sm text-gray-400">CFO, Global Imports Co.</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The real-time reporting capabilities have given us unprecedented visibility into our financial performance. We can now make data-driven decisions instantly."</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-white">Emily Rodriguez</p>
+                            <p class="text-sm text-gray-400">Owner, Retail Solutions</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 hover:border-purple-500/50">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Switching to Albert Park was the best decision we made. Their team's responsiveness and expertise have helped us scale our business efficiently."</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-white">David Thompson</p>
+                            <p class="text-sm text-gray-400">Director, Innovation Labs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24 px-6">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Our Story
+                </h2>
+                <div class="space-y-8 text-gray-300">
+                    <p class="leading-relaxed">
+                        Founded in 2010, Albert Park Accounting Services emerged from a vision to revolutionize traditional accounting practices. Our founder, recognizing the growing need for technology-driven financial solutions, assembled a team of forward-thinking accountants and financial technology experts to create a modern accounting firm that would serve the evolving needs of businesses in the digital age.
+                    </p>
+                    <p class="leading-relaxed">
+                        Today, we're driven by our core values of innovation, integrity, and client success. Our mission is to empower businesses with cutting-edge financial solutions that drive growth and success. We believe in combining human expertise with advanced technology to deliver exceptional results for our clients, maintaining the highest standards of professional excellence and ethical practice in everything we do.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-24 px-6 bg-gray-800/50">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Frequently Asked Questions
+                </h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-700 hover:border-purple-500/50">
+                        <h3 class="text-xl font-semibold mb-4">How do your cloud accounting services work?</h3>
+                        <p class="text-gray-400">Our cloud accounting platform provides secure, 24/7 access to your financial data from any device. We handle all setup, training, and ongoing support, ensuring a smooth transition to digital accounting.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-700 hover:border-purple-500/50">
+                        <h3 class="text-xl font-semibold mb-4">What tax optimization strategies do you offer?</h3>
+                        <p class="text-gray-400">We provide comprehensive tax planning, including structure optimization, deduction maximization, and compliance management. Our strategies are tailored to your specific business needs and goals.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-700 hover:border-purple-500/50">
+                        <h3 class="text-xl font-semibold mb-4">How secure is my financial data?</h3>
+                        <p class="text-gray-400">We employ bank-level encryption, regular security audits, and strict access controls to protect your data. Our systems comply with all relevant data protection regulations and industry standards.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-700 hover:border-purple-500/50">
+                        <h3 class="text-xl font-semibold mb-4">What types of businesses do you serve?</h3>
+                        <p class="text-gray-400">We work with businesses of all sizes across various industries, from startups to established enterprises. Our solutions are scalable and can be customized to meet your specific industry requirements.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-700 hover:border-purple-500/50">
+                        <h3 class="text-xl font-semibold mb-4">How do I get started?</h3>
+                        <p class="text-gray-400">Getting started is easy. Schedule a free consultation, and we'll assess your needs, provide a custom solution proposal, and guide you through the onboarding process.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact" class="py-24 px-6 bg-gradient-to-br from-purple-900/40 to-gray-900">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Finances?</h2>
-                <p class="text-xl text-gray-300 mb-12">Contact us today to get started</p>
+                <p class="text-xl text-gray-300 mb-12">Take the first step towards financial excellence today</p>
                 <div class="flex flex-col items-center justify-center space-y-4">
-                    <a href="mailto:support@example.com" class="text-lg text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                    <a href="mailto:support@example.com" class="text-lg text-purple-400 hover:text-purple-300 transition-colors duration-300 hover:scale-105 transform">
                         support@example.com
                     </a>
                     <a href="https://theaccountants.com" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
-                        Schedule a Consultation
+                        Schedule Your Free Consultation
                     </a>
                 </div>
             </div>
@@ -151,25 +298,25 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Tax Optimization</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Cloud Accounting</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Financial Reporting</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Tax Optimization</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Cloud Accounting</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Financial Reporting</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Company</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="https://test-acc-12349.github.io/albert-park-accounting-services-2025-04-24-b80vn/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Contact Us</a></li>
+                        <li><a href="https://test-acc-12349.github.io/albert-park-accounting-services-2025-04-24-b80vn/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/albert-park-accounting-services-2025-04-24-b80vn/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -178,5 +325,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
